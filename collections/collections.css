@@ -1,0 +1,162 @@
+/* Navigation  */
+
+.products-nav {
+    position: relative;
+}
+
+/* Banner */
+
+.products-banner-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 0.5rem 0;
+    background-color:  #FBFBFD;
+}
+
+.products-banner-container__title {
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 2rem 0.5rem;
+    background-color: #F7F7F7;
+    margin: 0;
+}
+
+/* Grid  */
+
+.grid-body-container {
+    background-color: #FBFBFD;
+    margin-top: 2rem;
+}
+
+.grid-body-container__title {
+    margin: 0;
+    font-size: 2rem;
+    padding: 2rem 2rem 0.5rem 1rem;
+    color: #406D99;
+}
+
+.bottomLine {
+    border-color: rgba(128, 128, 128, 0.192);
+    border-width: 0.2px;
+    margin-bottom: 1rem;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid-container__column {
+    margin: 1rem 1rem 2rem 1rem;
+    height: 70vh;
+    width: 70%; 
+}
+
+.grid-container__column a {
+    text-decoration: none;
+}
+
+.grid-container__column__bg {
+    background-position: center;
+    background-size: cover;
+    height: 60%;
+    width: 100%; 
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.view-btn {
+    position: absolute;
+    font-size: 1.3rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem 2rem;
+    border-color: transparent;
+    border-radius: 25px;
+    display: none;
+    background-color: #598afd;
+    color: white;
+}
+
+.view-btn:hover,
+.view-btn:active {
+    outline: none;
+}
+
+.grid-container__column__bg:hover {
+    cursor: pointer;
+    filter: brightness(0.9);
+}
+
+.grid-container__column__bg:hover > .view-btn {
+    cursor: pointer;
+    display: block;
+
+}
+
+.grid-container__column__body {
+    height: auto;
+}
+
+.grid-container__column__titleLeft, .grid-container__column__titleRight {
+    margin-bottom: 0;
+}
+
+.grid-container__column__titleLeft {
+    color: black;
+    width: 100%;
+    float: left;
+}
+
+.grid-container__column__titleRight {
+    color: black;
+    width: 100%;
+    float: left;
+}
+
+.grid-container__column__subTitle {
+    margin-top: 0.5rem;
+    color: rgb(83, 83, 83);
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+/* Responsive Media */
+
+@media (min-width: 50rem) {
+    .grid-container__column {
+        width: 40%;
+    }
+
+    .grid-container__column__bg {
+        height: 70%;
+    }
+
+    .grid-container__column__titleLeft {
+        width: auto;
+        float: left;
+    }
+    
+    .grid-container__column__titleRight {
+        width: auto;
+        float: right;
+    }
+}
+
+
+@media (min-width: 80rem) {
+    .grid-container__column {
+        width: 30%;
+    }
+
+    .grid-container__column__bg {
+        height: 80%;
+    }
+}
+
+

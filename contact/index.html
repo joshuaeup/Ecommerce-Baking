@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Fresh Start Home Improvement">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="../shared.css">
+    <link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <i id="main-nav__responsive__toggle" class="fas fa-bars"></i>
+            <a class="main-nav__logo" href="../index.html"><i class="fas fa-fan"> </i> Fresh Start <i class="fas fa-fan"></i></a>
+            <a class="main-nav__link" href="../index.html">Home</a>
+            <a class="main-nav__link" href="../collections/index.html">Products</a>
+            <a class="main-nav__link" href="./index.html">Contact</a>
+            <a aria-label="Navigating Link" class="main-nav__cart" href="#"><i class="fas fa-shopping-bag"></i></a>
+        </nav>
+        <div id="responsive-nav" style="display: none;">
+            <input class="responsive-nav__input" type="text" placeholder="Search freshstart.com">
+            <hr class="responsive-nav__bottomLine">
+            <a class="responsive-nav__link" href="../index.html">Home</a>
+            <hr class="responsive-nav__link__bottomLine">
+            <a class="responsive-nav__link" href="../collections/index.html">Products</a>
+            <hr class="responsive-nav__link__bottomLine">
+            <a class="responsive-nav__link" href="./index.html">Contact</a>
+        </div>
+    </header>
+    <main class="contact-container">
+        <div class="contact-container__banner">
+            <h1 class="contact-container__banner__title">have some questions?</h1>
+        </div>
+        <div class="info-container__row contact-info__row">
+            <aside class="info-container__column">
+                <img class="info-container__column__img" alt="" src="../images/emailGif.gif">
+            </aside>
+            <div class="info-container__column">
+                <form class="form" action="submit">
+                    <label class="input-field" for="name">Enter your full name</label><br>
+                    <input class="input-field" id="name" type="text" placeholder="John Doe" required>
+                    <label class="input-field" for="number">Enter your phone number</label><br>
+                    <input class="input-field" id="number" type="tel" placeholder="(777) - 777 - 7777" required>
+                    <label class="input-field" for="email">Enter your email</label><br>
+                    <input class="input-field" id="email" type="email" placeholder="johndoe@email.com" required>
+                    <label class="input-field" for="comment">Leave us a message</label><br>
+                    <textarea class="input-field" id="comment" rows="3" cols="50" placeholder="I love this site!"></textarea>
+                    <button type="submit" class="input-field" id="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-container">
+        <div class="footer-container__column">
+            <h2 class="footer-container__column__title">About Site</h2>
+            <hr class="responsive-nav__bottomLine">
+            <p class="footer-container__column__text">This site was designed with the mobile-first approach and created for the purpose of the R2H Gateway Program for Software Development. The site was developed using strictly HTML, CSS, and JavaScript</p>
+        </div>
+        <div class="footer-container__column">
+            <h2 class="footer-container__column__title">Social Media</h2>
+            <hr class="responsive-nav__bottomLine">
+            <div class="footer-container__column__social">
+                <a aria-label="Navigating to Instagram" href="https://www.instagram.com/"><i class="footer-container__column__social__icon fab fa-instagram"></i></a>
+                <a aria-label="Navigating to Twitter" href="https://twitter.com/joshuaeup"><i class="footer-container__column__social__icon fab fa-twitter"></i></a>
+                <a aria-label="Navigating to Facebook" href="https://www.facebook.com/"><i class="footer-container__column__social__icon fab fa-facebook"></i></a>
+                <a aria-label="Navigating to Youtube" href="https://www.youtube.com/"><i class="footer-container__column__social__icon fab fa-youtube"></i></a>
+            </div>
+            <p class="copyright">&copy; Joshuaeup</p>
+        </div>
+    </footer>
+    <script src="../shared.js"></script>
+    <script src="https://kit.fontawesome.com/3cf526719d.js" crossorigin="anonymous"></script>
+</body>
+</html>
