@@ -56,12 +56,12 @@
 .banner-contents #bannerSubTitle {
   color: white;
   font-size: 1.8rem;
-  margin: 1rem;
+  margin: 1rem 1rem 1rem 0;
 }
 .banner-contents #btn {
   margin-top: 1rem;
   padding: 1.4rem 2.5rem;
-  background-color: #6372f5;
+  background-color: #fc8c79;
   color: white;
   border: none;
   border-radius: 15px;
@@ -70,10 +70,10 @@
 }
 .banner-contents #btn:hover {
   cursor: pointer;
-  background-color: #7b88f7;
+  background-color: #fda192;
 }
 .banner-contents #btn:focus {
-  background-color: #6372f5;
+  background-color: #fc8c79;
 }
 
 /* Footer */
