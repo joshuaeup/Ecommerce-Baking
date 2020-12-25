@@ -5,7 +5,7 @@
         <meta name="description" content="Fresh Start Home Improvement" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Baked and Bubbly</title>
-        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="public/css/index.css" />
     </head>
     <body>
         <header>
@@ -17,10 +17,10 @@
                 ></a>
                 <div id="main-nav__link__container">
                     <a class="main-nav__link" href="./index.html">Home</a>
-                    <a class="main-nav__link" href="./collections/index.html"
+                    <a class="main-nav__link" href="./pages/products.html"
                         >Products</a
                     >
-                    <a class="main-nav__link" href="./contact/index.html"
+                    <a class="main-nav__link" href="./pages/contact.html"
                         >Contact</a
                     >
                 </div>
@@ -291,7 +291,14 @@
             </div>
         </main>
         <footer class="footer-container">
-            <div class="footer-container__row">
+            <div id="footer-logo-img-container">
+                <img
+                    src="https://img.pngio.com/luxurious-badge-logo-design-free-vintage-stamp-logo-maker-badge-design-png-621_581.png"
+                    alt="logo"
+                    id="footer-logo-img"
+                />
+            </div>
+            <div class="footer-social__icon__link__container">
                 <a class="footer-social__icon__link"
                     ><i class="footer-social__icon fab fa-youtube"></i
                 ></a>
@@ -302,90 +309,30 @@
                     ><i class="footer-social__icon fab fa-youtube"></i
                 ></a>
             </div>
-            <div class="footer-container__row"></div>
-            <!-- <div class="footer-container__column">
-                <ul class="footer-link-list">
-                    <li class="footer-list__item">About Baked and Bubbly</li>
-                    <li class="footer-list__item">Contact Us</li>
-                    <li class="footer-list__item">FAQ</li>
-                    <li class="footer-list__item">Blog</li>
-                    <li class="footer-list__item">Link</li>
-                    <li class="footer-list__item">Link</li>
-                </ul>
-                <ul class="footer-link-list">
-                    <li class="footer-list__item">Link</li>
-                    <li class="footer-list__item">Link</li>
-                    <li class="footer-list__item">Link</li>
-                    <li class="footer-list__item">Link</li>
-                    <li class="footer-list__item">Link</li>
-                </ul>
-            </div>
-            <div class="footer-container__column">
-                <ul class="footer-social-list">
-                    <li class="footer-list__social">
-                        <i
-                            class="footer-container__column__social__icon fab fa-youtube"
-                        ></i>
-                    </li>
-                    <li class="footer-list__social">
-                        <i
-                            class="footer-container__column__social__icon fab fa-youtube"
-                        ></i>
-                    </li>
-                    <li class="footer-list__social">
-                        <i
-                            class="footer-container__column__social__icon fab fa-youtube"
-                        ></i>
-                    </li>
-                </ul>
-            </div> -->
-            <!-- <div class="footer-container__column">
-                <h4 class="footer-container__column__title">About Site</h4>
-                <hr class="responsive-nav__bottomLine" />
-                <p class="footer-container__column__text">
-                    This site was designed with the mobile-first approach and
-                    created for the purpose of the R2H Gateway Program for
-                    Software Development. The site was developed using strictly
-                    HTML, CSS, and JavaScript
-                </p>
-            </div>
-            <div class="footer-container__column">
-                <h4 class="footer-container__column__title">Around The Web</h4>
-                <hr class="responsive-nav__bottomLine" />
-                <div class="footer-container__column__social">
-                    <a
-                        aria-label="Navigating to Instagram"
-                        href="https://www.instagram.com/"
-                        ><i
-                            class="footer-container__column__social__icon fab fa-instagram"
-                        ></i
-                    ></a>
-                    <a
-                        aria-label="Navigating to Twitter"
-                        href="https://twitter.com/joshuaeup"
-                        ><i
-                            class="footer-container__column__social__icon fab fa-twitter"
-                        ></i
-                    ></a>
-                    <a
-                        aria-label="Navigating to Facebook"
-                        href="https://www.facebook.com/"
-                        ><i
-                            class="footer-container__column__social__icon fab fa-facebook"
-                        ></i
-                    ></a>
-                    <a
-                        aria-label="Navigating to Youtube"
-                        href="https://www.youtube.com/"
-                        ><i
-                            class="footer-container__column__social__icon fab fa-youtube"
-                        ></i
-                    ></a>
-                </div>
-                <p class="copyright">&copy; Joshuaeup</p>
-            </div> -->
+            <ul class="footer-link-list">
+                <li class="footer-link">
+                    <a class="link" href="#">About</a>
+                </li>
+                <li class="footer-link">
+                    <a class="link" href="#">Support</a>
+                </li>
+                <li class="footer-link">
+                    <a class="link" href="#">Blog</a>
+                </li>
+                <li class="footer-link four">
+                    <a class="link" href="#">Terms of Use</a>
+                </li>
+                <li class="footer-link">
+                    <a class="link" href="#">Blog</a>
+                </li>
+
+                <li class="footer-link five">
+                    <a class="link" href="#">Privacy Policy</a>
+                </li>
+            </ul>
+            <p id="copyright" class="footer-link">© 2020 joshuaeup</p>
         </footer>
-        <script src="./shared.js"></script>
+        <script src="/public/js/shared.js"></script>
         <script
             src="https://kit.fontawesome.com/3cf526719d.js"
             crossorigin="anonymous"
