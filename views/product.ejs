@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/index.css" />
+        <title>Baked and Bubbly Products</title>
+    </head>
+    <body>
+        <header>
+            <nav class="main-nav">
+                <i id="main-nav__responsive__toggle" class="fas fa-bars"></i>
+                <a class="main-nav__logo" href="/"
+                    ><i class="fas fa-fan"> </i> Baked and Bubbly
+                    <i class="fas fa-fan"></i
+                ></a>
+                <div id="main-nav__link__container">
+                    <a class="main-nav__link" href="/">Home</a>
+                    <a class="main-nav__link" href="/products">Products</a>
+                    <a class="main-nav__link" href="/contact">Contact</a>
+                </div>
+
+                <a class="main-nav__cart" aria-label="Navigating Link" href="#"
+                    ><i class="fas fa-shopping-bag"></i
+                ></a>
+            </nav>
+            <div class="products-banner-container">
+                <div id="responsive-nav" style="display: none">
+                    <input
+                        class="responsive-nav__input"
+                        type="text"
+                        placeholder="Search freshstart.com"
+                    />
+                    <hr class="responsive-nav__bottomLine" />
+                    <a class="responsive-nav__link" href="./index.html">Home</a>
+                    <hr class="responsive-nav__link__bottomLine" />
+                    <a
+                        class="responsive-nav__link"
+                        href="./collections/index.html"
+                        >Products</a
+                    >
+                    <hr class="responsive-nav__link__bottomLine" />
+                    <a class="responsive-nav__link" href="./contact.html"
+                        >Contact</a
+                    >
+                </div>
+            </div>
+        </header>
+        <main id="padded-main">
+            <h2 class="home-grid-container__title">Products</h2>
+            <hr class="underline" />
+            <div id="six-grid-container">
+                <%= for(let i = 0; i < product.length; i++) { %>
+                <article class="product-grid-container__column">
+                    <div class="product-grid-item-img">
+                        <img
+                            class="grid-img"
+                            src="<% product[i].image >"
+                            alt="cupcake"
+                        />
+                    </div>
+                    <div class="product-grid-item">
+                        <a> Organic Banana Whole Trade Guarantee, 1 Each</a>
+                    </div>
+                    <div class="product-grid-item">
+                        <span
+                            ><i class="fas fa-star star-icon"></i
+                            ><i class="fas fa-star star-icon"></i
+                            ><i class="fas fa-star star-icon"></i
+                            ><i class="fas fa-star star-icon"></i
+                            ><i class="fas fa-star star-icon"></i> 18</span
+                        >
+                    </div>
+                    <div class="product-grid-item">
+                        <span class="grid-price">$3.84</span>
+                    </div>
+                </article>
+                <%= } %>
+            </div>
+        </main>
+        <footer class="footer-container">
+            <div id="footer-logo-img-container">
+                <img
+                    src="https://img.pngio.com/luxurious-badge-logo-design-free-vintage-stamp-logo-maker-badge-design-png-621_581.png"
+                    alt="logo"
+                    id="footer-logo-img"
+                />
+            </div>
+            <div class="footer-social__icon__link__container">
+                <a class="footer-social__icon__link"
+                    ><i class="footer-social__icon fab fa-youtube"></i
+                ></a>
+                <a class="footer-social__icon__link"
+                    ><i class="footer-social__icon fab fa-youtube"></i
+                ></a>
+                <a class="footer-social__icon__link"
+                    ><i class="footer-social__icon fab fa-youtube"></i
+                ></a>
+            </div>
+            <ul class="footer-link-list">
+                <li class="footer-link">
+                    <a class="link" href="#">About</a>
+                </li>
+                <li class="footer-link">
+                    <a class="link" href="#">Support</a>
+                </li>
+                <li class="footer-link">
+                    <a class="link" href="#">Blog</a>
+                </li>
+                <li class="footer-link four">
+                    <a class="link" href="#">Terms of Use</a>
+                </li>
+                <li class="footer-link">
+                    <a class="link" href="#">Blog</a>
+                </li>
+
+                <li class="footer-link five">
+                    <a class="link" href="#">Privacy Policy</a>
+                </li>
+            </ul>
+            <p id="copyright" class="footer-link">© 2020 joshuaeup</p>
+        </footer>
+        <script src="/js/shared.js"></script>
+        <script
+            src="https://kit.fontawesome.com/3cf526719d.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
