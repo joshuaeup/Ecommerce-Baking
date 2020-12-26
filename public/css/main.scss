@@ -1,7 +1,6 @@
 @import "partials/_banner";
 @import "partials/_productsBanner";
 @import "partials/_footer";
-@import "partials/_gridDisplay";
 @import "partials/_navbar";
 @import "partials/_resnavbar";
 @import "partials/_grid";
@@ -25,6 +24,10 @@ body {
     background-color: #f8edd6;
     padding: 0;
     margin: 0;
+}
+
+main {
+    margin-top: 3rem;
 }
 
 @media (min-width: 50rem) {
