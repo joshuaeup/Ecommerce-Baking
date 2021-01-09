@@ -1,8 +1,31 @@
 {
-    "cupcakes": [
+    "cupcake": [
         {
             "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
-            "name": "Strawberry Cupcake",
+            "name": "Strawberry",
+            "reviews": 18,
+            "ratings": [
+                {
+                    "one": 0
+                },
+                {
+                    "two": 0
+                },
+                {
+                    "three": 0
+                },
+                {
+                    "four": 0
+                },
+                {
+                    "five": 2
+                }
+            ],
+            "price": 20.01
+        },
+        {
+            "image": "https://prismic-io.s3.amazonaws.com/lesbonneschoses/bf6819a34ff187c5a59d781351a91834c92b7ebf.png",
+            "name": "Chocolate",
             "reviews": 18,
             "ratings": [
                 {
@@ -25,7 +48,7 @@
         },
         {
             "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
-            "name": "Lime Cupcake",
+            "name": "Strawberry",
             "reviews": 18,
             "ratings": [
                 {
@@ -48,7 +71,7 @@
         },
         {
             "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
-            "name": "Strawberry Cupcake",
+            "name": "Strawberry",
             "reviews": 18,
             "ratings": [
                 {
@@ -71,7 +94,7 @@
         },
         {
             "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
-            "name": "Strawberry Cupcake",
+            "name": "Strawberry",
             "reviews": 18,
             "ratings": [
                 {
@@ -94,7 +117,7 @@
         },
         {
             "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
-            "name": "Strawberry Cupcake",
+            "name": "Strawberry",
             "reviews": 18,
             "ratings": [
                 {
@@ -117,7 +140,7 @@
         },
         {
             "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
-            "name": "Strawberry Cupcake",
+            "name": "Strawberry",
             "reviews": 18,
             "ratings": [
                 {
@@ -140,7 +163,7 @@
         },
         {
             "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
-            "name": "Strawberry Cupcake",
+            "name": "Strawberry",
             "reviews": 18,
             "ratings": [
                 {
@@ -163,7 +186,7 @@
         },
         {
             "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
-            "name": "Strawberry Cupcake",
+            "name": "Strawberry",
             "reviews": 18,
             "ratings": [
                 {
@@ -186,30 +209,7 @@
         },
         {
             "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
-            "name": "Strawberry Cupcake",
-            "reviews": 18,
-            "ratings": [
-                {
-                    "one": 0
-                },
-                {
-                    "two": 0
-                },
-                {
-                    "three": 0
-                },
-                {
-                    "four": 0
-                },
-                {
-                    "five": 2
-                }
-            ],
-            "price": 20.01
-        },
-        {
-            "image": "https://www.pngkey.com/png/full/167-1676383_strawberry-cupcake-by-bubupoodle-on-deviantart-cupcakes-with.png",
-            "name": "Strawberry Cupcake",
+            "name": "Strawberry",
             "reviews": 18,
             "ratings": [
                 {

@@ -10,19 +10,48 @@ router.get("/", (req, res) => {
 });
 
 // Products Route (Cupcakes)
-router.get("/products", (req, res) => {
-    res.render("products", { product: data.cupcakes });
+router.get("/products/:category", (req, res) => {
+    const category = req.params.category.toLowerCase();
+    const object = data[category];
+
+    res.render("products", { products: object });
 });
 
 // Clicked Product page
-router.get("/products/:item", (req, res) => {
-    const product = req.params.item;
-    res.send(product);
+router.get("/products/:category/:item", (req, res) => {
+    const category = req.params.category.toLowerCase();
+    const item = req.params.item.toLowerCase();
+
+    // const object = data[category][item];
+    const chosenItem = data[category].find((searchedItem) => {
+        return item === searchedItem.name.toLowerCase();
+    });
+
+    if (!chosenItem) {
+        res.status(404).send("Product Not Found");
+    }
+
+    const { image, name, reviews, price } = chosenItem;
+    const type = category.charAt(0).toUpperCase() + category.slice(1);
+
+    res.render("product", {
+        image: image,
+        name: name,
+        reviews: reviews,
+        price: price,
+        type: type,
+    });
 });
 
 // Contact Route
 router.get("/contact", (req, res) => {
     res.render("contact");
+});
+
+// Cart Route
+router.get("/cart", (req, res) => {
+    const { image, name, price, type = "Cupcake" } = data.cupcake[1];
+    res.render("cart", { image, name, price, type });
 });
 
 module.exports = router;

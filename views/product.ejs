@@ -7,75 +7,140 @@
         <title>Baked and Bubbly Products</title>
     </head>
     <body>
-        <header>
-            <nav class="main-nav">
-                <i id="main-nav__responsive__toggle" class="fas fa-bars"></i>
-                <a class="main-nav__logo" href="/"
-                    ><i class="fas fa-fan"> </i> Baked and Bubbly
-                    <i class="fas fa-fan"></i
-                ></a>
-                <div id="main-nav__link__container">
-                    <a class="main-nav__link" href="/">Home</a>
-                    <a class="main-nav__link" href="/products">Products</a>
-                    <a class="main-nav__link" href="/contact">Contact</a>
-                </div>
+        <nav class="main-nav">
+            <i id="main-nav__responsive__toggle" class="fas fa-bars"></i>
+            <a class="main-nav__logo" href="/"
+                ><i class="fas fa-fan"> </i> Baked and Bubbly
+                <i class="fas fa-fan"></i
+            ></a>
+            <div id="main-nav__link__container">
+                <a class="main-nav__link" href="/">Home</a>
+                <a class="main-nav__link" href="/products/cupcake">Products</a>
+                <a class="main-nav__link" href="/contact">Contact</a>
+            </div>
 
-                <a class="main-nav__cart" aria-label="Navigating Link" href="#"
-                    ><i class="fas fa-shopping-bag"></i
-                ></a>
-            </nav>
-            <div class="products-banner-container">
-                <div id="responsive-nav" style="display: none">
-                    <input
-                        class="responsive-nav__input"
-                        type="text"
-                        placeholder="Search freshstart.com"
-                    />
-                    <hr class="responsive-nav__bottomLine" />
-                    <a class="responsive-nav__link" href="./index.html">Home</a>
-                    <hr class="responsive-nav__link__bottomLine" />
-                    <a
-                        class="responsive-nav__link"
-                        href="./collections/index.html"
-                        >Products</a
-                    >
-                    <hr class="responsive-nav__link__bottomLine" />
-                    <a class="responsive-nav__link" href="./contact.html"
-                        >Contact</a
-                    >
-                </div>
+            <a class="main-nav__cart" aria-label="Navigating Link" href="/cart"
+                ><i class="fas fa-shopping-bag"></i
+            ></a>
+        </nav>
+        <header class="product-header">
+            <div class="product-dual-column">
+                <h2 class="product-grid-title"><%= name %> <%= type %></h2>
+            </div>
+            <div class="product-dual-column">
+                <h2 class="product-grid-title">$<%= price %></h2>
             </div>
         </header>
-        <main id="padded-main">
-            <h2 class="home-grid-container__title">Products</h2>
-            <hr class="underline" />
-            <div id="six-grid-container">
-                <%= for(let i = 0; i < product.length; i++) { %>
-                <article class="product-grid-container__column">
-                    <div class="product-grid-item-img">
+        <main id="main" class="product-main">
+            <div class="product-dual-grid">
+                <div class="product-dual-column">
+                    <div
+                        id="product-image-sticky"
+                        class="product-image-container"
+                    >
                         <img
-                            class="grid-img"
-                            src="<% product[i].image >"
-                            alt="cupcake"
+                            src="<%= image %>"
+                            alt="<%= name %>"
+                            id="product-image"
                         />
+                        <div class="product-grid-item">
+                            <div class="four-grid-container">
+                                <img
+                                    src="<%= image %>"
+                                    alt="<%= name %>"
+                                    id="product-image"
+                                />
+                                <img
+                                    src="https://lh3.googleusercontent.com/proxy/jWcdizbMZC_xahqqyRRlTkJJdsVcU1H8P5zIiIJAIgMIN8u8Yj9gzOfjZXt0bUUu6MXTZn-hLQc9ku2V-EjK-O0B70X3jIs_FY2uyvv2GhJqm-OGy0M4LoJr0pBU0vmS2GC8gy3hDJ9eJpHGek1-lcRmNjoXlR_FWhhDbjZotMYPKA"
+                                    alt="<%= name %>"
+                                    id="product-image"
+                                />
+                                <img
+                                    src="<%= image %>"
+                                    alt="<%= name %>"
+                                    id="product-image"
+                                />
+                                <img
+                                    src="https://lh3.googleusercontent.com/proxy/jWcdizbMZC_xahqqyRRlTkJJdsVcU1H8P5zIiIJAIgMIN8u8Yj9gzOfjZXt0bUUu6MXTZn-hLQc9ku2V-EjK-O0B70X3jIs_FY2uyvv2GhJqm-OGy0M4LoJr0pBU0vmS2GC8gy3hDJ9eJpHGek1-lcRmNjoXlR_FWhhDbjZotMYPKA"
+                                    alt="<%= name %>"
+                                    id="product-image"
+                                />
+                            </div>
+                        </div>
+                        <hr class="divideLine" />
                     </div>
-                    <div class="product-grid-item">
-                        <a> Organic Banana Whole Trade Guarantee, 1 Each</a>
+                </div>
+                <div class="product-dual-column">
+                    <div class="product-title__container">
+                        <h2 class="product-title">Customize Your Dessert!</h2>
                     </div>
-                    <div class="product-grid-item">
-                        <span
-                            ><i class="fas fa-star star-icon"></i
-                            ><i class="fas fa-star star-icon"></i
-                            ><i class="fas fa-star star-icon"></i
-                            ><i class="fas fa-star star-icon"></i
-                            ><i class="fas fa-star star-icon"></i> 18</span
-                        >
+                    <div class="input-radio__container">
+                        <h2 class="input-radio__title">Choose your flavor</h2>
+                        <div class="input-radio">
+                            <span class="text__wrapper">
+                                <span class="text">Name</span>
+                                <span class="text">Other Info</span>
+                            </span>
+                        </div>
+                        <div class="input-radio">
+                            <span class="text__wrapper">
+                                <span class="text">Name</span>
+                                <span class="text">Other Info</span>
+                            </span>
+                        </div>
                     </div>
-                    <div class="product-grid-item">
-                        <span class="grid-price">$3.84</span>
+                    <hr class="divideLine" />
+                    <div class="input-radio__container">
+                        <h2 class="input-radio__title">Choose your flavor</h2>
+                        <div class="input-radio">
+                            <span class="text__wrapper">
+                                <span class="text">Name</span>
+                                <span class="text">Other Info</span>
+                            </span>
+                        </div>
+                        <div class="input-radio">
+                            <span class="text__wrapper">
+                                <span class="text">Name</span>
+                                <span class="text">Other Info</span>
+                            </span>
+                        </div>
                     </div>
-                </article>
-                <%= } %>
+                    <hr class="divideLine" />
+                    <div class="input-radio__container">
+                        <h2 class="input-radio__title">Choose your flavor</h2>
+                        <div class="input-radio">
+                            <span class="text__wrapper">
+                                <span class="text">Name</span>
+                                <span class="text">Other Info</span>
+                            </span>
+                        </div>
+                        <div class="input-radio">
+                            <span class="text__wrapper">
+                                <span class="text">Name</span>
+                                <span class="text">Other Info</span>
+                            </span>
+                        </div>
+                    </div>
+                    <hr class="divideLine" />
+                    <div class="input-radio__container">
+                        <h2 class="input-radio__title">Choose your flavor</h2>
+                        <div class="input-radio">
+                            <span class="text__wrapper">
+                                <span class="text">Name</span>
+                                <span class="text">Other Info</span>
+                            </span>
+                        </div>
+                        <div class="input-radio">
+                            <span class="text__wrapper">
+                                <span class="text">Name</span>
+                                <span class="text">Other Info</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="cart-add__container">
+                        <button class="cart-add__btn">Add To Cart</button>
+                    </div>
+                </div>
             </div>
         </main>
         <footer class="footer-container">

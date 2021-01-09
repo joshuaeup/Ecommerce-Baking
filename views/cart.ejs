@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/index.css" />
+        <title>Baked and Bubbly Products</title>
+    </head>
+    <body>
+        <nav class="main-nav">
+            <i id="main-nav__responsive__toggle" class="fas fa-bars"></i>
+            <a class="main-nav__logo" href="/"
+                ><i class="fas fa-fan"> </i> Baked and Bubbly
+                <i class="fas fa-fan"></i
+            ></a>
+            <div id="main-nav__link__container">
+                <a class="main-nav__link" href="/">Home</a>
+                <a class="main-nav__link" href="/products/cupcake">Products</a>
+                <a class="main-nav__link" href="/contact">Contact</a>
+            </div>
+
+            <a class="main-nav__cart" aria-label="Navigating Link" href="/cart"
+                ><i class="fas fa-shopping-bag"></i
+            ></a>
+        </nav>
+        <header class="cart-header">
+            <div class="header-row">
+                <h2 class="header-title">Your cart total is $<%= price %></h2>
+            </div>
+            <div class="header-row">
+                <p class="header-subTitle">Just a few clicks away!</p>
+            </div>
+            <div class="header-row">
+                <button class="header-btn">Check Out</button>
+            </div>
+        </header>
+        <hr class="divideLine" />
+        <main id="main" class="product-main">
+            <div class="contact-dual-grid">
+                <div class="product-dual-column">
+                    <div
+                        id="product-image-sticky"
+                        class="product-image-container"
+                    >
+                        <img
+                            src="<%= image %>"
+                            alt="<%= name %>"
+                            id="product-image"
+                        />
+                    </div>
+                </div>
+                <div class="product-dual-column"></div>
+            </div>
+        </main>
+        <footer class="footer-container">
+            <div id="footer-logo-img-container">
+                <img
+                    src="https://img.pngio.com/luxurious-badge-logo-design-free-vintage-stamp-logo-maker-badge-design-png-621_581.png"
+                    alt="logo"
+                    id="footer-logo-img"
+                />
+            </div>
+            <div class="footer-social__icon__link__container">
+                <a class="footer-social__icon__link"
+                    ><i class="footer-social__icon fab fa-youtube"></i
+                ></a>
+                <a class="footer-social__icon__link"
+                    ><i class="footer-social__icon fab fa-youtube"></i
+                ></a>
+                <a class="footer-social__icon__link"
+                    ><i class="footer-social__icon fab fa-youtube"></i
+                ></a>
+            </div>
+            <ul class="footer-link-list">
+                <li class="footer-link">
+                    <a class="link" href="#">About</a>
+                </li>
+                <li class="footer-link">
+                    <a class="link" href="#">Support</a>
+                </li>
+                <li class="footer-link">
+                    <a class="link" href="#">Blog</a>
+                </li>
+                <li class="footer-link four">
+                    <a class="link" href="#">Terms of Use</a>
+                </li>
+                <li class="footer-link">
+                    <a class="link" href="#">Blog</a>
+                </li>
+
+                <li class="footer-link five">
+                    <a class="link" href="#">Privacy Policy</a>
+                </li>
+            </ul>
+            <p id="copyright" class="footer-link">© 2020 joshuaeup</p>
+        </footer>
+        <script src="/js/shared.js"></script>
+        <script
+            src="https://kit.fontawesome.com/3cf526719d.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
