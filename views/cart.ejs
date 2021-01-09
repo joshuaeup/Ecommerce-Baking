@@ -36,20 +36,85 @@
         </header>
         <hr class="divideLine" />
         <main id="main" class="product-main">
-            <div class="contact-dual-grid">
-                <div class="product-dual-column">
-                    <div
-                        id="product-image-sticky"
-                        class="product-image-container"
-                    >
+            <% for(let i = 0; i < 7; i++) { %>
+            <div class="cart-dual-grid">
+                <div class="cart-dual-column">
+                    <div class="cart-image-container">
                         <img
                             src="<%= image %>"
                             alt="<%= name %>"
-                            id="product-image"
+                            class="cart-image"
                         />
                     </div>
                 </div>
-                <div class="product-dual-column"></div>
+                <div class="cart-dual-column">
+                    <div class="cart-desc__container">
+                        <div class="cart-desc">
+                            <h3 class="cart-desc__container__body">
+                                <%= name %> <%= type %>
+                            </h3>
+                        </div>
+                        <div class="cart-desc">
+                            <select
+                                name="quantity"
+                                id="quantity"
+                                class="cart-desc__container__body"
+                            >
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="cart-desc">
+                            <h3 class="cart-desc__container__body">
+                                $<%= price %>
+                            </h3>
+                            <button class="cart-desc__container__btn">
+                                Remove
+                            </button>
+                        </div>
+                    </div>
+                    <hr class="divideLine" />
+                </div>
+            </div>
+            <% } %>
+            <hr class="divideLine" />
+            <div class="cart-total__container">
+                <div class="cart-total__container__row">
+                    <div class="cart-total__container__row__column">
+                        <p>Subtotal</p>
+                    </div>
+                    <div class="cart-total__container__row__column">
+                        <p>$<%= price %></p>
+                    </div>
+                </div>
+                <div class="cart-total__container__row">
+                    <div class="cart-total__container__row__column">
+                        <p>Shipping</p>
+                    </div>
+                    <div class="cart-total__container__row__column">
+                        <p>FREE</p>
+                    </div>
+                </div>
+                <div class="cart-total__container__row">
+                    <div class="cart-total__container__row__column">
+                        <p>Estimated tax for 28213</p>
+                    </div>
+                    <div class="cart-total__container__row__column">
+                        <p>$729.00</p>
+                    </div>
+                </div>
+                <hr class="divideLine" />
+                <div class="cart-total__container__row">
+                    <div class="cart-total__container__row__column">
+                        <h3>Total</h3>
+                    </div>
+                    <div class="cart-total__container__row__column">
+                        <h3>$729.00</h3>
+                    </div>
+                </div>
+                <button class="checkout-btn">Check Out</button>
             </div>
         </main>
         <footer class="footer-container">
